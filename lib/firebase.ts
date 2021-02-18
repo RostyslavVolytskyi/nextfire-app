@@ -13,10 +13,9 @@ const firebaseConfig = {
   measurementId: "G-84F2539DM5"
 };
 
-if (!firebase.app.length) {
+if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)
 }
-
 
 // Auth exports
 export const auth = firebase.auth();

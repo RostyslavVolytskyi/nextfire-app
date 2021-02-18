@@ -9,12 +9,11 @@ export default function Enter(props) {
   // 3. user signed in, has username <SignOutButton />
   return (
     <main>
-      {/* {user ? 
+      {user ? 
         !username ? <UsernameForm /> : <SignOutButton /> 
         : 
         <SignInButton />
-      } */}
-      <h1>Sign In</h1>
+      }
     </main>
   );
 }
@@ -32,11 +31,11 @@ function SignInButton() {
   );
 }
 
-// // Sign out button
-// function SignOutButton() {
-//   return <button onClick={() => auth.signOut()}>Sign Out</button>;
-// }
+// Sign out button
+function SignOutButton() {
+  return <button onClick={() => auth.signOut()}>Sign Out</button>;
+}
 
-// function UsernameForm() {
-//   return null;
-// }
+function UsernameForm() {
+  return null;
+}
